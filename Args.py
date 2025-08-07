@@ -9,7 +9,7 @@ def average(*args):
 
 def centroid(*args):
   """Function to provide centroid of any number of points in heterogenous dimensions
-  Usage: centroid([1, 2, 3], [1, 2], [1], [2, 3, 4, 5, 6, 7]) returns output as []"""
+  Usage: centroid([1, 2, 3], [1, 2], [1], [2, 3, 4, 5, 6, 7]) returns output as [1.25, 1.75, 1.75, 1.25, 1.5, 1.75]"""
   from itertools import zip_longest
   if not args:
     return None # (or) raise ValueError('Values not provided')
