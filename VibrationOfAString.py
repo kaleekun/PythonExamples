@@ -1,4 +1,4 @@
-# Author - kalais
+# Author - KaLee
 # Vibration of a string with damping using matplotlib for animation
 # CFL criterion is used for stability of the solution, which uses
 #               finite differences for PDE solving
