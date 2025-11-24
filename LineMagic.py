@@ -1,4 +1,4 @@
-# Author: Kalaiselvan
+# Author: KaLee
 
 from IPython.core.magic import register_line_magic
 
