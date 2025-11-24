@@ -6,8 +6,7 @@ from itertools import zip_longest
 def myRange(start: int, stop: int|None = None, step: int|float = 1)->Iterator[int|float]:
   """This function is layed out as a generator to mimic 'range' builtin"""
   if stop is None:
-    stop = start
-    start = 0
+    stop, start = start, 0
   loopOp = operator.lt if step > 0 else operator.gt
   if abs(step):
     while(loopOp(start, stop)):
