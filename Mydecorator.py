@@ -1,3 +1,5 @@
+#Author - KaLee
+
 import functools
 
 def timedecorator(func): # takes in a function pointer
