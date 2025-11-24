@@ -31,7 +31,7 @@ for i in range(10000000):
     unext = [0 for j in range(len(unow))]
     unext[0]=unow[0]
     unext[-1]=unow[-1]
-    for k in range(1, len(unow)-1):
+    for k in range(1, len(unow)-1): # --> Actual solving happens here. This solves for string position at a time instant, once the string is released.
         unext[k] = (2*unow[k]-(uold[k]*(1-(dampCoefficient/2))) + (unow[k-1]-(2*unow[k])+unow[k+1])*((deltaT/deltaL)**2))/(1 + (dampCoefficient/2))
 
     uold = unow[:]
