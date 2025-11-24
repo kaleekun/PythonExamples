@@ -1,5 +1,6 @@
 def FindSurfaceAreaANdVolume(filepathToSTLFile):
   """Givern a filepath to a STL file, this function returns Area and Volume as a tuple."""
+  p, area, vol = [],0, 0
   with open(filepathToSTLFile) as f:
       p, area, vol = [],0, 0
       for i in f.readlines():
