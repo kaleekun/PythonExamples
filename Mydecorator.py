@@ -3,7 +3,7 @@
 import functools
 
 def timedecorator(func): # takes in a function pointer
-    @functools.wraps     # --> makes sure, original functions documentations and required attributes are copied to innerfunc below
+    @functools.wraps(func)     # --> makes sure, original function's documentation and other required attributes are copied to innerfunc below
     def innerfunc(*args, **kwds):
         import time
         start = time.time()
@@ -15,7 +15,7 @@ def timedecorator(func): # takes in a function pointer
 # so far, with above code, what we have accomplished is that, wrapped the function that was passed.
 
 def logdecorator(func): # takes in a function pointer
-    @functools.wraps     # --> makes sure, original functions documentations and required attributes are copied to innerfunc below
+    @functools.wraps(func)     # --> makes sure, original function's documentation and other required attributes are copied to innerfunc below
     def innerfunc(*args, **kwds):
         with open(r"d:/temp/log.txt", "a") as file: # opening file
           file.write("Function started to run\n")
