@@ -1,3 +1,5 @@
+# Author - KaLee
+
 def func(*args, **kwds): # --> This is the most general function and can mimic any other function. No wonder, its used in decorator
   print(args, kwds)   # - Prints tuple (args) and dictionary (kwds)
   print(*args, *kwds) # - Prints by streaming all values from tuple into print function as parameter and 
