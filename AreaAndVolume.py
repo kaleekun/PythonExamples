@@ -1,7 +1,7 @@
 # Author - KaLee
 from typing import Tuple
 def FindSurfaceAreaANdVolume(filepathToSTLFile: str) -> Tuple[float, float]:
-  """Givern a filepath to a STL file, this function returns Area and Volume as a tuple."""
+  """Given a filepath to a STL file, this function returns Area and Volume as a tuple."""
   p, area, vol = [],0, 0
   with open(filepathToSTLFile) as f:
       p, area, vol = [],0, 0
