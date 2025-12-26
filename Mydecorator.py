@@ -28,4 +28,5 @@ def logdecorator(func): # takes in a function pointer
 @logdecorator   # this is a cascaded decorator
 @timedecorator  # this is equivalent to decoratedFunc = logdecorator(timedecorator(decoratedFunc))
 def decoratedFunc():
+    """dummy decorator, just for a simple demo"""
     print('decoratedFunc is called')
